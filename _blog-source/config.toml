@@ -1,0 +1,5 @@
+languageCode = "en-us"
+title = "My New Hugo Site"
+baseURL = "http://mprashant.com/blog/"
+theme = "hemingway2"
+
