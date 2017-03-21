@@ -2,23 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://mprashant.com/blog/post/welcome/</loc>
+    <loc>http://blog.mprashant.com/post/welcome/</loc>
     <lastmod>2017-03-21T16:23:41+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://mprashant.com/blog/post/hello-world/</loc>
+    <loc>http://blog.mprashant.com/post/hello-world/</loc>
     <lastmod>2017-02-21T17:23:41+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://mprashant.com/blog/</loc>
+    <loc>http://blog.mprashant.com/</loc>
     <lastmod>2017-03-21T16:23:41+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://mprashant.com/blog/post/</loc>
+    <loc>http://blog.mprashant.com/post/</loc>
     <lastmod>2017-03-21T16:23:41+05:30</lastmod>
     <priority>0</priority>
   </url>

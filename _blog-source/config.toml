@@ -1,5 +1,5 @@
 languageCode = "en-us"
 title = "My New Hugo Site"
-baseURL = "http://mprashant.com/blog/"
+baseURL = "http://blog.mprashant.com/"
 theme = "hemingway2"
 
