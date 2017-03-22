@@ -26,8 +26,8 @@ disqusShortname = "mprashant-com"
   
 [params]
     # You can use markdown here.
-    BrandImage = "http://blog.appernetic.io/images/apperneticlogo.png" #top header brand image.
-    brand = "Prashant Mandhare blog" # brand image alt text.
+    BrandImage = "" #top header brand image.
+    brand = "Stay Hungry, Stay Foolish" # brand image alt text.
     topline = ""
     footline = "code with <i class='fa fa-heart'></i>"
 
@@ -81,7 +81,7 @@ disqusShortname = "mprashant-com"
     [Languages.en]
     weight = 1
     copyright = ""
-    title = "Prashant Mandhare Blog" # Site title
+    title = "Stay Hungry, Stay Foolish" # Site title
   
    [[Languages.en.menu.main]]
     name = "Blog"
