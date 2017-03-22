@@ -2,24 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://blog.mprashant.com/post/welcome/</loc>
-    <lastmod>2017-03-21T16:23:41+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.mprashant.com/post/hello-world/</loc>
-    <lastmod>2017-02-21T17:23:41+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.mprashant.com/</loc>
-    <lastmod>2017-03-21T16:23:41+05:30</lastmod>
-    <priority>0</priority>
+    <loc>http://blog.mprashant.com/post/yi-small-ants-customization/</loc>
+    <lastmod>2017-03-22T18:23:41+05:30</lastmod>
   </url>
   
   <url>
     <loc>http://blog.mprashant.com/post/</loc>
-    <lastmod>2017-03-21T16:23:41+05:30</lastmod>
+    <lastmod>2017-03-22T18:23:41+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.mprashant.com/</loc>
+    <lastmod>2017-03-22T18:23:41+05:30</lastmod>
     <priority>0</priority>
   </url>
   

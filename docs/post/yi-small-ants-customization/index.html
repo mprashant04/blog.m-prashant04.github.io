@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Xiaomi Yi Small Ants camera Hacks  &amp; Customization  &middot; Prashant Mandhare Blog</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="">
+
+
+<meta property="og:title" content="Xiaomi Yi Small Ants camera Hacks  &amp; Customization  &middot; Prashant Mandhare Blog ">
+<meta property="og:site_name" content="Prashant Mandhare Blog"/>
+<meta property="og:url" content="http://blog.mprashant.com/post/yi-small-ants-customization/" />
+<meta property="og:locale" content="en-us">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2017-03-22T18:23:41&#43;05:30" />
+<meta property="og:article:modified_time" content="2017-03-22T18:23:41&#43;05:30" />
+
+  
+
+  
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Xiaomi Yi Small Ants camera Hacks  &amp; Customization",
+    "author": {
+      "@type": "Person",
+      "name": "http://profiles.google.com/+?rel=author"
+    },
+    "datePublished": "2017-03-22",
+    "description": "",
+    "wordCount": 1168
+  }
+</script>
+
+
+
+<link rel="canonical" href="http://blog.mprashant.com/post/yi-small-ants-customization/" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+<link rel="icon" href="/favicon.png">
+<meta name="generator" content="Hugo 0.19" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+    <link rel="stylesheet" href="http://blog.mprashant.com/css/bootswatch/paper/bootstrap.min.css">
+
+
+<link rel="stylesheet" href="http://blog.mprashant.com/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://blog.mprashant.com/css/style.css">
+
+
+  <link rel="stylesheet" href="http://blog.mprashant.com/css/highlight/default.css">
+
+
+</head>
+<body class="map[name:paper]" data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+          
+          <a class="navbar-brand-img" href="/">
+            <img alt="Prashant Mandhare blog" src="http://blog.appernetic.io/images/apperneticlogo.png">
+            
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+
+              <a href="http://mprashant.com" >
+                <i class='fa fa-camera' ></i>
+                Photo gallery
+              </a>
+            </li>
+            
+            <li class="">
+
+              <a href="http://blog.mprashant.com/post/" >
+                
+                Blog
+              </a>
+            </li>
+            
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <div class="text-center">
+
+    <h1>Xiaomi Yi Small Ants camera Hacks  &amp; Customization
+</h1>
+
+    <div class="metas">
+<small>
+  <i class="fa fa-calendar"></i>
+  <time datetime="2017-03-22">22 Mar, 2017</time>
+</small>
+
+
+  <small>
+  &middot; Read in about 6 min
+  &middot; (1168 words)
+</small>
+
+
+<div class="margin-10">
+
+</div>
+<br>
+</div>
+
+  </div>
+</div>
+
+      <div class="content">
+  
+
+<p>Xiaomi Yi Small Ants is great comptact wifi camera suitable for general purpose home / office security or monitoring. Great thing about this camera is that it runs linux operating system which makes it fun to fiddle with it and customize as per your requirements.</p>
+
+<p>Following command will give yoy version of linux running on your camera.</p>
+
+<pre><code>  # uname -a
+  Linux (none) 3.0.8 #1 Wed Jan 30 16:56:49 CST 2017 armv5tejl GNU/Linux
+</code></pre>
+
+<p>Camera firmware has been programmed to detect and run /temp/equip_test.sh file from micro-sd card card on camera startup. We can use this to customize your camera as per need. Following is the equip_test.sh script I have been using with my camera. Hope this helps you to customize your cameras as well.</p>
+
+<h2 id="steps">Steps</h2>
+
+<ul>
+<li>Insert micro-sd card on your computer card reader</li>
+<li>Create &lsquo;temp&rsquo; folder on the cars</li>
+<li>Create equip_test.sh file in this temp directory and add required script in it.</li>
+<li>Now insert this card in  your camera</li>
+<li>Power on the camera</li>
+</ul>
+
+<h2 id="equip-test-sh-script">equip_test.sh script</h2>
+
+<p>To keep stuff understandable, I will explain this script in parts. (You just have to merge all following script snippets into single equip_test.sh file)</p>
+
+<h3 id="initialization">Initialization</h3>
+
+<p>Following is the first initiation part of the script. It sets required variables. Script log will be written in equip_test_logs.txt file</p>
+
+<pre><code>#!/bin/sh
+
+# variable for sd card directory
+dr='dirname $0' 
+echo "running script...." > $dr/equip_test_logs.txt
+
+# Variable for camera number, I have multiple cameras and this helps to identify them
+CAM_NO=4
+</code></pre>
+
+<h3 id="only-china-issue-fix">&lsquo;Only china&rsquo; issue fix</h3>
+
+<p>Xiami have started marketing different versions for Chinese market and other countries. If you have bought China version of camera, then on startup camera will give audio warning &laquo;This camera can only be used in China&raquo; and it&rsquo;s pairing with mobile application will fail. Following script will fix this issue. I have experienced that you this fix each time camera firmware is updated.</p>
+
+<pre><code>echo "fixing only china issue" >> $dr/equip_test_logs.txt
+    
+cp /home/cloud $dr/cloud_original
+strings /home/cloud | grep http  >> $dr/cloud_grep_original.txt
+
+ps | grep /home/watch_process | grep -v "grep" | awk '{print $1}' | xargs kill -9
+ps | grep /home/cloud | grep -v "grep" | awk '{print $1}' | xargs kill -9
+sed -i  's|api.xiaoyi.com/v4/ipc/check_did|api.xiaoyi.cox/v4/ipc/check_did|g' /home/cloud
+
+cp /home/cloud $dr/cloud_modded
+strings /home/cloud | grep http  >> $dr/cloud_grep_modded.txt
+</code></pre>
+
+<p>Following script snippet logs whole file system tree in the camera internal memory. While experimenting with camera (was trying to configure dropbox &amp; google drive sync application), I copied a large (~ 5MB) file into the camera&rsquo;s bin folder. After this camera started misbehaving, it was failing to connect to the wifi. After extensive troubleshooting I remembered that I had coped something on it, and had to find it out. Used following script to log all files on the camera, and find &amp; delete required files.</p>
+
+<pre><code>echo "logging file system tree...." >> $dr/equip_test_logs.txt
+
+# log whole directory tree in filesystem.txt file
+ls -R -l / >> $dr/filesystem.txt
+
+# Once required files is detected, use following to delete them
+rm -f file-name-to-be-deleted
+</code></pre>
+
+<h3 id="register-new-commands">Register new commands</h3>
+
+<p>Following script snippet creates my custom &lsquo;log&rsquo; &amp; &lsquo;reboot&rsquo; commands in /bin folder. These commands are used in subsequent script. &lsquo;log&rsquo; command logs messages into /tmp/hd1/logs folder (new log file is created each week). Such logs are useful for debug purpose when something goes wrong.</p>
+
+<pre><code>echo "settig up basic commands" >> $dr/equip_test_logs.txt
+
+echo "#!/bin/sh" > /bin/log
+echo "LOG_FILE=/tmp/hd1/logs/z_log-week-\$(date +\"%W\").txt  " >> /bin/log 
+echo "mkdir /tmp/hd1/logs" >> /bin/log  
+echo "echo \"[\$(date +\"%Y-%m-%d %H:%M:%S\")] \$1\"  >> \$LOG_FILE" >> /bin/log
+chmod 777 /bin/log
+
+echo "#!/bin/sh" > /bin/restart
+echo "log \"soft restarting....\"" >> /bin/restart
+echo "reboot" >> /bin/restart
+chmod 777 /bin/restart  
+</code></pre>
+
+<h3 id="phone-push-notifications">Phone push notifications</h3>
+
+<p>I have programmed my cameras to send push notification on my Android phone (using <a href="https://pushover.net/">&lsquo;Pushover&rsquo;</a> app) Pushover allows you to send notifications to your phone with help of simple curl command. You just have to pay small one time fee ($2-3 I guess) and create new Pushover account, and use your account token to send phone notifications. Following sctips creates &lsquo;pushnotify&rsquo; system command which is used in other scripts to send notifications. Very useful to keep regular watch on your cameras, you don&rsquo;t want to wake up one fine day in event of emergency to find out that camera has been non-functioning for many days &amp; you don&rsquo;t have camera recordings.</p>
+
+<pre><code>echo "setting up pushnotify" >> $dr/equip_test_logs.txt
+
+echo "#!/bin/sh" > /bin/pushnotify
+echo "log \"push notification begin:  ($CAM_NO) \$1\"" >> /bin/pushnotify
+
+# this is needed to run curl command, referenced from profile file which is executed on login, but not for cron job
+echo "LD_LIBRARY_PATH=\"/home/bt:/home/libusr:/usr/local/lib:/usr/lib\"" >> /bin/pushnotify
+echo "export LD_LIBRARY_PATH" >> /bin/pushnotify
+
+echo "RESULT=\$(/home/curl --form-string \"token=your-token-here\" --form-string \"user=your-user-id-here\" --form-string \"message=($CAM_NO) \$1\" http://api.pushover.net/1/messages.json  2>&1)" >> /bin/pushnotify
+echo "log \"push notification result: \$RESULT\"" >> /bin/pushnotify
+chmod 777 /bin/pushnotify
+
+</code></pre>
+
+<h3 id="custom-cron-jobs">Custom cron jobs</h3>
+
+<p>Following script snippet sets up cron job for restarting cameras every night (My experience says restarting camera daily keeps them relatively more stable). I have also written additional script (&lsquo;auto_delete_old_files&rsquo;, this script file is present on SD card along with equip_test.sh file. Let me know if anyone need this script as well) to delete oldest video recordings in order to always keep at least 15-20% of SD card memory free. This script has been configured to run every hour. I know that camera automatically deletes oldest video files when running out of disk space, but I was facing occasional SD card corruption issue, hence thought of always keeping minimum 15% card space free. After this workaround never faced SD corruption issue.</p>
+
+<pre><code>#Setup cron service on startup, also send "booted" push notification to your phone
+echo "setting up cron" >> $dr/equip_test_logs.txt
+echo "#!/bin/sh" > /etc/init.d/S89cron
+echo "sleep 2m" >> /etc/init.d/S89cron
+echo "log \"starting cron service on startup (if u don't see soft reboot log above, this means it is hard reset)\"" >> /etc/init.d/S89cron
+echo "pushnotify \"booted\"" >> /etc/init.d/S89cron
+echo "crond &" >> /etc/init.d/S89cron   
+chmod 777 /etc/init.d/S89cron
+
+rm -f /bin/auto_delete_old_files
+mv $dr/auto_delete_old_files /bin/auto_delete_old_files
+chmod 777 /bin/auto_delete_old_files
+
+# create /var/spool/cron/crontabs directory
+mkdir /var/spool
+mkdir /var/spool/cron
+mkdir /var/spool/cron/crontabs
+
+# create cron config for root user
+echo "# reboot each night 5:30 AM - 2.5 hrs = 3:00AM IST, keeping reboot time different than other cron tasks time" > /var/spool/cron/crontabs/root
+echo "30 5 * * *      restart" >> /var/spool/cron/crontabs/root
+echo "  " >> /var/spool/cron/crontabs/root
+echo "# delete oldest videos each hour, if running low on disk space" >> /var/spool/cron/crontabs/root
+echo "0 * * * *      /bin/auto_delete_old_files" >> /var/spool/cron/crontabs/root
+chmod 666 /var/spool/cron/crontabs/root
+</code></pre>
+
+<h3 id="enable-telnet">Enable telnet</h3>
+
+<p>Automatically start telnet on camera startup</p>
+
+<pre><code>rm -f /etc/init.d/S88telnet
+echo "setting up telnet" >> $dr/equip_test_logs.txt
+echo "#!/bin/sh" > /etc/init.d/S88telnet
+echo "telnetd &" >> /etc/init.d/S88telnet
+chmod 755 /etc/init.d/S88telnet
+</code></pre>
+
+<h3 id="enable-ftp">Enable FTP</h3>
+
+<p>Following script will create &lsquo;ftp&rsquo; command in camnera, whenever I need to access camera using FTP, I connect to it using telnet and run ftp command. If you need ftp to be always available, you can also start FTP during boot (like telnet above). Since I don&rsquo;t need ftp so often, I prefer to start it manually whenever required.</p>
+
+<pre><code>echo "setting up ftp" >> $dr/equip_test_logs.txt
+
+rm -f /etc/init.d/S89ftp
+echo "#!/bin/sh" > /bin/ftp
+echo "nohup tcpsvd -u root -vE 0.0.0.0 21 ftpd -w / >> /dev/null 2>&1 &" >> /bin/ftp
+chmod 755 /bin/ftp
+</code></pre>
+
+<h3 id="finish-gracefully">Finish gracefully</h3>
+
+<p>Now following is last part of script, it just renames script to avoid repeated execution and reboots camera</p>
+
+<pre><code>mv $dr/equip_test.sh $dr/equip_test-moved.sh
+echo "rebooting...." >> $dr/equip_test_logs.txt
+reboot
+</code></pre>
+
+</div>
+
+
+      <footer>
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      
+  
+
+
+</div>
+
+  <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//prashantmandhare.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+    </div>
+    
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+        <div>
+  
+
+    <div class="section">
+      <header><div class="title"><b>Latest Posts</b></div></header>
+      <div class="content">
+        <ul>
+        
+          <li>
+          <a href="http://blog.mprashant.com/post/yi-small-ants-customization/">Xiaomi Yi Small Ants camera Hacks  &amp; Customization</a>
+          </li>
+        
+          <li>
+          <a href="http://blog.mprashant.com/post/">Posts</a>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+
+    
+      
+      
+    
+      
+      
+    
+
+</div>
+
+      </div>
+    
+  </div>
+</div>
+      
+<footer class="footer hidden-print">
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+           <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">back to top</a>
+</div>
+<div class="pull-right">
+
+</div>
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+              
+    
+<div class="container footline">
+    <small>
+  code with <i class='fa fa-heart'></i>
+
+</small>
+</div>
+
+
+    
+
+
+        </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+<script src="//s3.amazonaws.com/mailmunch/static/site.js" id="mailmunch-script" data-mailmunch-site-id="" async="async"></script>
+
+
+
+<script src="//load.sumome.com/" data-sumo-site-id="" async="async"></script>
+
+<script src="http://blog.mprashant.com/js/jquery.min.js"></script>
+<script src="http://blog.mprashant.com/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+<script src="/js/popover/angular-storage.min.js"></script>
+
+
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//prashantmandhare.disqus.com/count.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+  $('#return-to-top').click(function() {      
+    $('body,html').animate({
+        scrollTop : 0                       
+    }, 500);
+});
+</script>
+
+
+<script src="http://blog.mprashant.com/js/highlight.pack.js"></script>
+<script src="http://blog.mprashant.com/js/site.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script>
+  var _gaq=[['_setAccount','UA-82848598-1'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+<script>
+var ENABLE_POPOVER = ""; 
+var EXPIRE_COOKIE = ""; 
+var SHOW_MODAL_TIMEOUT = ""; 
+var MOUSE_LEAVE = ""; 
+var MODAL_SIZE = ""; 
+var POST_URL = ""; 
+var SIGNUP_HEADER = "";
+var HEADER_IMAGE = "";
+var IMG_DESCRIPTION = "";
+var SIGNUP_TEXT = "";
+var INPUT_PLACEHOLDER = "";
+var SUBMIT_BUTTON = "";
+var SUCCESS_MESSAGE = "";
+var ERROR_MESSAGE = "";
+var OPTIN = "";
+var COOKIE_NAME = "";
+</script>
+<script src="/js/popover/angular-modal-service.min.js"></script>
+<script src="/js/angular-ismobile.min.js"></script>
+<script src="/js/popover/popover.min.js"></script>
+
+  </body>
+</html>
+

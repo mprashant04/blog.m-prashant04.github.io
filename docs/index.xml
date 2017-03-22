@@ -1,53 +1,189 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
+    <title>Prashant Mandhare Blog</title>
     <link>http://blog.mprashant.com/index.xml</link>
-    <description>Recent content on My New Hugo Site</description>
+    <description>Recent content on Prashant Mandhare Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Mar 2017 16:23:41 +0530</lastBuildDate>
+    <managingEditor>prashant.mandhare04@gmail.com (Prashant Mandhare)</managingEditor>
+    <webMaster>prashant.mandhare04@gmail.com (Prashant Mandhare)</webMaster>
+    <lastBuildDate>Wed, 22 Mar 2017 18:23:41 +0530</lastBuildDate>
     <atom:link href="http://blog.mprashant.com/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>welcome</title>
-      <link>http://blog.mprashant.com/post/welcome/</link>
-      <pubDate>Tue, 21 Mar 2017 16:23:41 +0530</pubDate>
-      
-      <guid>http://blog.mprashant.com/post/welcome/</guid>
-      <description>&lt;p&gt;What is Lorem Ipsum?&lt;/p&gt;
+      <title>Xiaomi Yi Small Ants camera Hacks  &amp; Customization</title>
+      <link>http://blog.mprashant.com/post/yi-small-ants-customization/</link>
+      <pubDate>Wed, 22 Mar 2017 18:23:41 +0530</pubDate>
+      <author>prashant.mandhare04@gmail.com (Prashant Mandhare)</author>
+      <guid>http://blog.mprashant.com/post/yi-small-ants-customization/</guid>
+      <description>
 
-&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&amp;rsquo;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-Why do we use it?&lt;/p&gt;
+&lt;p&gt;Xiaomi Yi Small Ants is great comptact wifi camera suitable for general purpose home / office security or monitoring. Great thing about this camera is that it runs linux operating system which makes it fun to fiddle with it and customize as per your requirements.&lt;/p&gt;
 
-&lt;p&gt;It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using &amp;lsquo;Content here, content here&amp;rsquo;, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for &amp;lsquo;lorem ipsum&amp;rsquo; will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).&lt;/p&gt;
+&lt;p&gt;Following command will give yoy version of linux running on your camera.&lt;/p&gt;
 
-&lt;p&gt;Where does it come from?&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  # uname -a
+  Linux (none) 3.0.8 #1 Wed Jan 30 16:56:49 CST 2017 armv5tejl GNU/Linux
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of &amp;ldquo;de Finibus Bonorum et Malorum&amp;rdquo; (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, &amp;ldquo;Lorem ipsum dolor sit amet..&amp;rdquo;, comes from a line in section 1.10.32.&lt;/p&gt;
+&lt;p&gt;Camera firmware has been programmed to detect and run /temp/equip_test.sh file from micro-sd card card on camera startup. We can use this to customize your camera as per need. Following is the equip_test.sh script I have been using with my camera. Hope this helps you to customize your cameras as well.&lt;/p&gt;
 
-&lt;p&gt;The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from &amp;ldquo;de Finibus Bonorum et Malorum&amp;rdquo; by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.&lt;/p&gt;
-</description>
-    </item>
+&lt;h2 id=&#34;steps&#34;&gt;Steps&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Insert micro-sd card on your computer card reader&lt;/li&gt;
+&lt;li&gt;Create &amp;lsquo;temp&amp;rsquo; folder on the cars&lt;/li&gt;
+&lt;li&gt;Create equip_test.sh file in this temp directory and add required script in it.&lt;/li&gt;
+&lt;li&gt;Now insert this card in  your camera&lt;/li&gt;
+&lt;li&gt;Power on the camera&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;equip-test-sh-script&#34;&gt;equip_test.sh script&lt;/h2&gt;
+
+&lt;p&gt;To keep stuff understandable, I will explain this script in parts. (You just have to merge all following script snippets into single equip_test.sh file)&lt;/p&gt;
+
+&lt;h3 id=&#34;initialization&#34;&gt;Initialization&lt;/h3&gt;
+
+&lt;p&gt;Following is the first initiation part of the script. It sets required variables. Script log will be written in equip_test_logs.txt file&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#!/bin/sh
+
+# variable for sd card directory
+dr=&#39;dirname $0&#39; 
+echo &#34;running script....&#34; &gt; $dr/equip_test_logs.txt
+
+# Variable for camera number, I have multiple cameras and this helps to identify them
+CAM_NO=4
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;only-china-issue-fix&#34;&gt;&amp;lsquo;Only china&amp;rsquo; issue fix&lt;/h3&gt;
+
+&lt;p&gt;Xiami have started marketing different versions for Chinese market and other countries. If you have bought China version of camera, then on startup camera will give audio warning &amp;laquo;This camera can only be used in China&amp;raquo; and it&amp;rsquo;s pairing with mobile application will fail. Following script will fix this issue. I have experienced that you this fix each time camera firmware is updated.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;echo &#34;fixing only china issue&#34; &gt;&gt; $dr/equip_test_logs.txt
     
-    <item>
-      <title>Hello world- new draft-4</title>
-      <link>http://blog.mprashant.com/post/hello-world/</link>
-      <pubDate>Tue, 21 Feb 2017 17:23:41 +0530</pubDate>
-      
-      <guid>http://blog.mprashant.com/post/hello-world/</guid>
-      <description>&lt;p&gt;What is Lorem Ipsum?&lt;/p&gt;
+cp /home/cloud $dr/cloud_original
+strings /home/cloud | grep http  &gt;&gt; $dr/cloud_grep_original.txt
 
-&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&amp;rsquo;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-Why do we use it?&lt;/p&gt;
+ps | grep /home/watch_process | grep -v &#34;grep&#34; | awk &#39;{print $1}&#39; | xargs kill -9
+ps | grep /home/cloud | grep -v &#34;grep&#34; | awk &#39;{print $1}&#39; | xargs kill -9
+sed -i  &#39;s|api.xiaoyi.com/v4/ipc/check_did|api.xiaoyi.cox/v4/ipc/check_did|g&#39; /home/cloud
 
-&lt;p&gt;It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using &amp;lsquo;Content here, content here&amp;rsquo;, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for &amp;lsquo;lorem ipsum&amp;rsquo; will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).&lt;/p&gt;
+cp /home/cloud $dr/cloud_modded
+strings /home/cloud | grep http  &gt;&gt; $dr/cloud_grep_modded.txt
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Where does it come from?&lt;/p&gt;
+&lt;p&gt;Following script snippet logs whole file system tree in the camera internal memory. While experimenting with camera (was trying to configure dropbox &amp;amp; google drive sync application), I copied a large (~ 5MB) file into the camera&amp;rsquo;s bin folder. After this camera started misbehaving, it was failing to connect to the wifi. After extensive troubleshooting I remembered that I had coped something on it, and had to find it out. Used following script to log all files on the camera, and find &amp;amp; delete required files.&lt;/p&gt;
 
-&lt;p&gt;Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of &amp;ldquo;de Finibus Bonorum et Malorum&amp;rdquo; (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, &amp;ldquo;Lorem ipsum dolor sit amet..&amp;rdquo;, comes from a line in section 1.10.32.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;echo &#34;logging file system tree....&#34; &gt;&gt; $dr/equip_test_logs.txt
 
-&lt;p&gt;The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from &amp;ldquo;de Finibus Bonorum et Malorum&amp;rdquo; by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.&lt;/p&gt;
+# log whole directory tree in filesystem.txt file
+ls -R -l / &gt;&gt; $dr/filesystem.txt
+
+# Once required files is detected, use following to delete them
+rm -f file-name-to-be-deleted
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;register-new-commands&#34;&gt;Register new commands&lt;/h3&gt;
+
+&lt;p&gt;Following script snippet creates my custom &amp;lsquo;log&amp;rsquo; &amp;amp; &amp;lsquo;reboot&amp;rsquo; commands in /bin folder. These commands are used in subsequent script. &amp;lsquo;log&amp;rsquo; command logs messages into /tmp/hd1/logs folder (new log file is created each week). Such logs are useful for debug purpose when something goes wrong.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;echo &#34;settig up basic commands&#34; &gt;&gt; $dr/equip_test_logs.txt
+
+echo &#34;#!/bin/sh&#34; &gt; /bin/log
+echo &#34;LOG_FILE=/tmp/hd1/logs/z_log-week-\$(date +\&#34;%W\&#34;).txt  &#34; &gt;&gt; /bin/log 
+echo &#34;mkdir /tmp/hd1/logs&#34; &gt;&gt; /bin/log  
+echo &#34;echo \&#34;[\$(date +\&#34;%Y-%m-%d %H:%M:%S\&#34;)] \$1\&#34;  &gt;&gt; \$LOG_FILE&#34; &gt;&gt; /bin/log
+chmod 777 /bin/log
+
+echo &#34;#!/bin/sh&#34; &gt; /bin/restart
+echo &#34;log \&#34;soft restarting....\&#34;&#34; &gt;&gt; /bin/restart
+echo &#34;reboot&#34; &gt;&gt; /bin/restart
+chmod 777 /bin/restart  
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;phone-push-notifications&#34;&gt;Phone push notifications&lt;/h3&gt;
+
+&lt;p&gt;I have programmed my cameras to send push notification on my Android phone (using &lt;a href=&#34;https://pushover.net/&#34;&gt;&amp;lsquo;Pushover&amp;rsquo;&lt;/a&gt; app) Pushover allows you to send notifications to your phone with help of simple curl command. You just have to pay small one time fee ($2-3 I guess) and create new Pushover account, and use your account token to send phone notifications. Following sctips creates &amp;lsquo;pushnotify&amp;rsquo; system command which is used in other scripts to send notifications. Very useful to keep regular watch on your cameras, you don&amp;rsquo;t want to wake up one fine day in event of emergency to find out that camera has been non-functioning for many days &amp;amp; you don&amp;rsquo;t have camera recordings.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;echo &#34;setting up pushnotify&#34; &gt;&gt; $dr/equip_test_logs.txt
+
+echo &#34;#!/bin/sh&#34; &gt; /bin/pushnotify
+echo &#34;log \&#34;push notification begin:  ($CAM_NO) \$1\&#34;&#34; &gt;&gt; /bin/pushnotify
+
+# this is needed to run curl command, referenced from profile file which is executed on login, but not for cron job
+echo &#34;LD_LIBRARY_PATH=\&#34;/home/bt:/home/libusr:/usr/local/lib:/usr/lib\&#34;&#34; &gt;&gt; /bin/pushnotify
+echo &#34;export LD_LIBRARY_PATH&#34; &gt;&gt; /bin/pushnotify
+
+echo &#34;RESULT=\$(/home/curl --form-string \&#34;token=your-token-here\&#34; --form-string \&#34;user=your-user-id-here\&#34; --form-string \&#34;message=($CAM_NO) \$1\&#34; http://api.pushover.net/1/messages.json  2&gt;&amp;1)&#34; &gt;&gt; /bin/pushnotify
+echo &#34;log \&#34;push notification result: \$RESULT\&#34;&#34; &gt;&gt; /bin/pushnotify
+chmod 777 /bin/pushnotify
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;custom-cron-jobs&#34;&gt;Custom cron jobs&lt;/h3&gt;
+
+&lt;p&gt;Following script snippet sets up cron job for restarting cameras every night (My experience says restarting camera daily keeps them relatively more stable). I have also written additional script (&amp;lsquo;auto_delete_old_files&amp;rsquo;, this script file is present on SD card along with equip_test.sh file. Let me know if anyone need this script as well) to delete oldest video recordings in order to always keep at least 15-20% of SD card memory free. This script has been configured to run every hour. I know that camera automatically deletes oldest video files when running out of disk space, but I was facing occasional SD card corruption issue, hence thought of always keeping minimum 15% card space free. After this workaround never faced SD corruption issue.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#Setup cron service on startup, also send &#34;booted&#34; push notification to your phone
+echo &#34;setting up cron&#34; &gt;&gt; $dr/equip_test_logs.txt
+echo &#34;#!/bin/sh&#34; &gt; /etc/init.d/S89cron
+echo &#34;sleep 2m&#34; &gt;&gt; /etc/init.d/S89cron
+echo &#34;log \&#34;starting cron service on startup (if u don&#39;t see soft reboot log above, this means it is hard reset)\&#34;&#34; &gt;&gt; /etc/init.d/S89cron
+echo &#34;pushnotify \&#34;booted\&#34;&#34; &gt;&gt; /etc/init.d/S89cron
+echo &#34;crond &amp;&#34; &gt;&gt; /etc/init.d/S89cron   
+chmod 777 /etc/init.d/S89cron
+
+rm -f /bin/auto_delete_old_files
+mv $dr/auto_delete_old_files /bin/auto_delete_old_files
+chmod 777 /bin/auto_delete_old_files
+
+# create /var/spool/cron/crontabs directory
+mkdir /var/spool
+mkdir /var/spool/cron
+mkdir /var/spool/cron/crontabs
+
+# create cron config for root user
+echo &#34;# reboot each night 5:30 AM - 2.5 hrs = 3:00AM IST, keeping reboot time different than other cron tasks time&#34; &gt; /var/spool/cron/crontabs/root
+echo &#34;30 5 * * *      restart&#34; &gt;&gt; /var/spool/cron/crontabs/root
+echo &#34;  &#34; &gt;&gt; /var/spool/cron/crontabs/root
+echo &#34;# delete oldest videos each hour, if running low on disk space&#34; &gt;&gt; /var/spool/cron/crontabs/root
+echo &#34;0 * * * *      /bin/auto_delete_old_files&#34; &gt;&gt; /var/spool/cron/crontabs/root
+chmod 666 /var/spool/cron/crontabs/root
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;enable-telnet&#34;&gt;Enable telnet&lt;/h3&gt;
+
+&lt;p&gt;Automatically start telnet on camera startup&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;rm -f /etc/init.d/S88telnet
+echo &#34;setting up telnet&#34; &gt;&gt; $dr/equip_test_logs.txt
+echo &#34;#!/bin/sh&#34; &gt; /etc/init.d/S88telnet
+echo &#34;telnetd &amp;&#34; &gt;&gt; /etc/init.d/S88telnet
+chmod 755 /etc/init.d/S88telnet
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;enable-ftp&#34;&gt;Enable FTP&lt;/h3&gt;
+
+&lt;p&gt;Following script will create &amp;lsquo;ftp&amp;rsquo; command in camnera, whenever I need to access camera using FTP, I connect to it using telnet and run ftp command. If you need ftp to be always available, you can also start FTP during boot (like telnet above). Since I don&amp;rsquo;t need ftp so often, I prefer to start it manually whenever required.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;echo &#34;setting up ftp&#34; &gt;&gt; $dr/equip_test_logs.txt
+
+rm -f /etc/init.d/S89ftp
+echo &#34;#!/bin/sh&#34; &gt; /bin/ftp
+echo &#34;nohup tcpsvd -u root -vE 0.0.0.0 21 ftpd -w / &gt;&gt; /dev/null 2&gt;&amp;1 &amp;&#34; &gt;&gt; /bin/ftp
+chmod 755 /bin/ftp
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;finish-gracefully&#34;&gt;Finish gracefully&lt;/h3&gt;
+
+&lt;p&gt;Now following is last part of script, it just renames script to avoid repeated execution and reboots camera&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mv $dr/equip_test.sh $dr/equip_test-moved.sh
+echo &#34;rebooting....&#34; &gt;&gt; $dr/equip_test_logs.txt
+reboot
+&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     

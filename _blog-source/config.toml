@@ -1,5 +1,121 @@
 languageCode = "en-us"
 title = "My New Hugo Site"
 baseURL = "http://blog.mprashant.com/"
-theme = "hemingway2"
+theme = "hugo-bootstrap-premium"   # for hugo-bootstrap-premium documentation at https://github.com/appernetic/hugo-bootstrap-premium/tree/518fd6848caf377e92eec7d0e46972e71c4da57a
+
+# Enable Disqus integration
+disqusShortname = "prashantmandhare"
+
+
+[taxonomies]
+    tag = "tags"
+    topic = "topics"
+
+[author]
+    name = "Prashant Mandhare"
+    email = "prashant.mandhare04@gmail.com"
+	
+	
+
+# bootswatch theme name, unmark and select one: cerulean, cosmo, cyborg, darkly,
+# default, flatly, journal,  lumen, paper, readable, sandstone, simplex,
+# slate, spacelab, superhero, united, yeti.
+[params.theme]
+  name = "paper"
+  
+  
+[params]
+    # You can use markdown here.
+    BrandImage = "http://blog.appernetic.io/images/apperneticlogo.png" #top header brand image.
+    brand = "Prashant Mandhare blog" # brand image alt text.
+    topline = ""
+    footline = "code with <i class='fa fa-heart'></i>"
+
+    # Show a sidebar menu
+    showRightSidebar = true
+
+    # Text for the top menu link, which goes the root URL for the site.
+    # Default (if omitted) is "Home".
+    home = "home"
+
+    mailmunchid = "" # Mailmunch site id
+    sumomeid = "" # Sumome id
+
+    # Select a syntax highight.
+    # Check the static/css/highlight directory for options.
+    highlight = "default"
+
+    # Google Analytics.
+    googleAnalytics = "UA-82848598-1"
+
+    # Sidebar social links.
+    github = "" # Your Github profile ID
+    bitbucket = "" # Your Bitbucket profile ID
+    linkedin = "prashantmandhare" # Your LinkedIn profile ID (from public URL)
+    googleplus = "" # Your Google+ profile ID
+    facebook = "" # Your Facebook profile ID
+    twitter = "" # Your Twitter profile ID
+    youtube = ""  # Your Youtube channel ID
+    flattr = ""  # populate with your flattr uid
+	
+	
+[blackfriday]
+    angledQuotes = true
+    fractions = false
+    hrefTargetBlank = false
+    latexDashes = true
+    plainIdAnchors = true
+    extensions = []
+    extensionmask = []
+
+    # Menus
+    # If you want active menu items highlighted for internal pages don't add them here, they need to be added in each files front matter.
+    # like this:
+    #[menu]
+    #     [menu.main]
+    #        name = "Showcase"
+    #        weight = 3
+    #        identifier = "showcase"
+
+    [Languages]
+    [Languages.en]
+    weight = 1
+    copyright = ""
+    title = "Prashant Mandhare Blog" # Site title
+  
+   [[Languages.en.menu.main]]
+    name = "Blog"
+    pre = ""
+    weight = 2
+    identifier = "post"
+    url = "/post/"
+
+    [[Languages.en.menu.main]]
+    name = "Photo gallery"
+    weight = 1
+    identifier = ""
+    url = "http://mprashant.com"
+    pre = "<i class='fa fa-camera' ></i>"
+
+  #  [[Languages.en.menu.main]]
+  #  name = "Dashboard"
+  #  identifier = ""
+  #  weight = 3
+  #  url = "https://appernetic.io/app/"
+
+  #  [[Languages.en.menu.footer]] # add  links to the bottom right corner.
+  #  name = "Disclaimer"
+  #  pre = "<i>&middot;</i>"
+  #  identifier = "disclaimer"
+  #  weight = 1
+  #  url = "/disclaimer/"
+  
+  #  [[Languages.en.menu.footer]]
+  #  name = "Terms"
+  #  identifier = "terms"
+  #  weight = 2
+  #  url = "/terms/"
+      
+
+   
 
