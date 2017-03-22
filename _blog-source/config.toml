@@ -7,7 +7,7 @@ theme = "hugo-bootstrap-premium"   # for hugo-bootstrap-premium documentation at
 disqusShortname = "mprashant-com"
 
 # Build robots.txt file
-enableRobotsTXT=false
+enableRobotsTXT=true
 
 
 [taxonomies]
