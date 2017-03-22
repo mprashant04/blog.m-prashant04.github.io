@@ -6,6 +6,8 @@ draft = false
 
 
 
+![xiaomi small ants](http://blog.mprashant.com/images/posts/yi-small-ants/11.jpg)
+
 
 Xiaomi Yi Small Ants is great comptact wifi camera suitable for general purpose home / office security or monitoring. Great thing about this camera is that it runs linux operating system which makes it fun to fiddle with it and customize as per your requirements.
 
