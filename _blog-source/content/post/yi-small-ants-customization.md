@@ -66,7 +66,7 @@ CAM_NO=4
 
 
 ### 'Only china' issue fix
-Xiami have started marketing different versions for Chinese market and other countries. If you have bought China version of camera, then on startup camera will give audio warning "This camera can only be used in China" and it's pairing with mobile application will fail. Following script will fix this issue. I have experienced that you this fix each time camera firmware is updated.
+Xiami have started marketing different versions for Chinese market and other countries. If you have bought China version of camera, then on startup camera will give audio warning 'This camera can only be used in China' and it's pairing with mobile application will fail. Following script will fix this issue. I have experienced that you this fix each time camera firmware is updated.
 
 <pre><code>echo "fixing only china issue" >> $dr/equip_test_logs.txt
 	
