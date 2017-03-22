@@ -4,7 +4,7 @@ baseURL = "http://blog.mprashant.com/"
 theme = "hugo-bootstrap-premium"   # for hugo-bootstrap-premium documentation at https://github.com/appernetic/hugo-bootstrap-premium/tree/518fd6848caf377e92eec7d0e46972e71c4da57a
 
 # Enable Disqus integration
-disqusShortname = "prashantmandhare"
+disqusShortname = "mprashant-com"
 
 
 [taxonomies]
