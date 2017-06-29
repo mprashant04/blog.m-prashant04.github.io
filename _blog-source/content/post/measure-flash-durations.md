@@ -21,12 +21,19 @@ In order to get best possible visual presentation of optical pulses, use samplin
 
 * Guide number (ISO 100) - 24m
 * Power source - 2 AA batteries
-* Flash Duration (Full Power) - 1/1100 Sec
+* Flash Duration (Full Power) - 1/1100 Sec, i.e. 0.9 ms
+* Flash Duration (lowest Power) - Not provided 
 
 {{< figure src="/images/posts/measure-flash-durations/SB-500-1.png" link="/images/posts/measure-flash-durations/SB-500-1.png">}}
 
+<br />
+Following table shows actual flash duration readings taken for different flash powers. You can notice that Nikon official specs mention 0.9 ms duration for full power, but in reality my DIY setup finds it close to 2 ms. I measured full pulse duration right from zero level. Maybe Nikon using some specific formula to calculate flash duration. But at the end what you get in reality is what matter.
+
+Surprisingly I find lowest power (i.e. 1 / 128) flash duration to be on higher side if compared to other third party flashes available in market. Even my Digitek DFL-003, which is one of the cheapest flash available in market, surpassed low power flash duration tests with Nikon.
+
+
 | Manual flash power 	| Flash duration 	|
-|--------------------	|----------------	|
+|:--------------------- |:----------------- |
 | Full               	| 2 ms           	|
 | 1 / 1.3              	| 1.9 ms         	|
 | 1 / 1.7              	| 830 μs         	|
@@ -38,3 +45,14 @@ In order to get best possible visual presentation of optical pulses, use samplin
 | 1 / 80               	| 60 μs            	|
 | 1 / 128              	| 50 μs            	|
 
+
+## Digitek DFL-003
+
+One of the cheapest and in-demand flash available in market today. I bought this as backup flash for occassional in-house photography experiments. Even though it's limited in functionality, it surprises me with value we get for such low cost. 
+
+Some of the official specs:
+
+* Guide number (ISO 100) - 38m
+* Power source - 4 AA batteries
+* Flash Duration (Full Power) - 1/200 Sec, i.e. 5 ms
+* Flash Duration (lowest Power) - 1/20000 Sec, i.e. 50 μs
