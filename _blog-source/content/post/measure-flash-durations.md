@@ -8,7 +8,7 @@ Flash duration becomes very imortant aspect, especially in high speed photograph
 
 TODO: xxxxxxxxxxxxxxxxxxxxxx
 
-
+<br /><br />
 ### Optical pulse recorder
 
 One can easily build light sensing device using a simple photo-diode and 3.5mm audio jack. Connect -ve terminal of photo diode to ground and +ve terminal to center pin of audio jack. Plug it into mic input port of your PC and you are ready to record any optical pulses as an audio recording. I used 'Audacity', a free audio recording software, for recording optical pulses. Ensure to disable any type of microphone enhancement settings in the Windows sound settings. E.g. Realtek sound card drivers have enhancement setting called 'DTS clear voice', which pre-processes microphone signals by default. We need clear input signal from microphone jack without any digital enhancements.
@@ -32,7 +32,7 @@ Above Audacity screenshot shows actual flash duration readings taken for differe
 Surprisingly I find lowest power (i.e. 1 / 128) flash duration to be on higher side if compared to other third party flashes available in market. Even my Digitek DFL-003, which is one of the cheapest flash available in market, surpassed low power flash duration tests with Nikon.
 
 
-
+<br /><br />
 ### Digitek DFL-003
 
 One of the cheapest and in-demand flash available in market today. I bought this as backup flash for occassional in-house photography experiments. Even though it's limited in functionality, it surprises me with value we get for such low cost. 
@@ -52,6 +52,10 @@ Above Audacity screenshot shows flash durations for differen flash powers. Unlik
 <br />
 Due to few high speed photography projects lined up, I am more intersted in lower power flash duration. Above test results prove Digitek DFL-003 to be superior than Nikon SB-500 for this aspect. 
 
-
+<br /><br />
 ### [Update] Arduino project for optical pulse measurement
 
+{{< figure src="/images/posts/measure-flash-durations/arduino-1.png" link="/images/posts/measure-flash-durations/arduino-1.png">}}
+
+<br />
+Coming soon.....
