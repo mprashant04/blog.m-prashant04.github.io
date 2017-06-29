@@ -5,3 +5,5 @@ git add .
 git commit -a -m "$1" 
 git push 
 
+
+ping 127.0.0.1 -n 5 > nul
