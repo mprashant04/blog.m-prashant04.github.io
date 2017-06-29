@@ -8,8 +8,168 @@
     <language>en-us</language>
     <managingEditor>prashant.mandhare04@gmail.com (Prashant Mandhare)</managingEditor>
     <webMaster>prashant.mandhare04@gmail.com (Prashant Mandhare)</webMaster>
-    <lastBuildDate>Wed, 22 Mar 2017 18:23:41 +0530</lastBuildDate>
+    <lastBuildDate>Tue, 20 Jun 2017 12:11:09 +0530</lastBuildDate>
     <atom:link href="http://blog.mprashant.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Measuring flash durations - Digitek DFL-003 and Nikon SB-500</title>
+      <link>http://blog.mprashant.com/post/measure-flash-durations/</link>
+      <pubDate>Tue, 20 Jun 2017 12:11:09 +0530</pubDate>
+      <author>prashant.mandhare04@gmail.com (Prashant Mandhare)</author>
+      <guid>http://blog.mprashant.com/post/measure-flash-durations/</guid>
+      <description>
+
+&lt;p&gt;Flash duration becomes very imortant aspect, especially when you enter into high speed photography. Even though official company specs provide you full power and lowest power flash durations, nothing like having own system handy to measure actual flash pulse size for different power levels.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;optical-pulse-recorder&#34;&gt;Optical pulse recorder&lt;/h3&gt;
+
+&lt;p&gt;One can easily build light sensing device using a simple photo-diode and 3.5mm audio jack. Connect -ve terminal of photo diode to ground and +ve terminal to center pin of audio jack. Plug it into mic input port of your PC and you are ready to record any optical pulses as an audio recording. I used &amp;lsquo;Audacity&amp;rsquo;, a free audio recording software, for recording optical pulses. Ensure to disable any type of microphone enhancement settings in the Windows sound settings. E.g. Realtek sound card drivers have enhancement setting called &amp;lsquo;DTS clear voice&amp;rsquo;, which pre-processes microphone signals by default. We need clear input signal from microphone jack without any digital enhancements.&lt;/p&gt;
+
+
+&lt;figure &gt;
+    &lt;a href=&#34;http://blog.mprashant.com/images/posts/measure-flash-durations/photo-diode-1.jpg&#34;&gt;
+        &lt;img src=&#34;http://blog.mprashant.com/images/posts/measure-flash-durations/photo-diode-1.jpg&#34; /&gt;
+    &lt;/a&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;In order to get best possible visual presentation of optical pulses, use sampling rate of 96000 or more while recording in Audacity.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;nikon-sb-500&#34;&gt;Nikon SB-500&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Guide number (ISO 100) - 24m&lt;/li&gt;
+&lt;li&gt;Power source - 2 AA batteries&lt;/li&gt;
+&lt;li&gt;Flash Duration (Full Power) - 1/1100 Sec, i.e. 0.9 ms&lt;/li&gt;
+&lt;li&gt;Flash Duration (lowest Power) - Not provided&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;figure &gt;
+    &lt;a href=&#34;http://blog.mprashant.com/images/posts/measure-flash-durations/SB-500-1.png&#34;&gt;
+        &lt;img src=&#34;http://blog.mprashant.com/images/posts/measure-flash-durations/SB-500-1.png&#34; /&gt;
+    &lt;/a&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;&lt;br /&gt;
+Above Audacity screenshot shows actual flash duration readings taken for different flash powers. You can notice that Nikon official specs mention 0.9 ms duration for full power, but in reality my DIY setup finds it close to 2 ms. I measured full pulse duration right from zero level. Maybe Nikon using some specific formula to calculate flash duration. But at the end what you get in reality is what matter.&lt;/p&gt;
+
+&lt;p&gt;Surprisingly I find lowest power (i.e. 1 / 128) flash duration to be on higher side if compared to other third party flashes available in market. Even my Digitek DFL-003, which is one of the cheapest flash available in market, surpassed low power flash duration tests with Nikon.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;digitek-dfl-003&#34;&gt;Digitek DFL-003&lt;/h3&gt;
+
+&lt;p&gt;One of the cheapest and in-demand flash available in market today. I bought this as backup flash for occassional in-house photography experiments. Even though it&amp;rsquo;s limited in functionality, it surprises me with value we get for such low cost.&lt;/p&gt;
+
+&lt;p&gt;Some of the official specs:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Guide number (ISO 100) - 38m&lt;/li&gt;
+&lt;li&gt;Power source - 4 AA batteries&lt;/li&gt;
+&lt;li&gt;Flash Duration (Full Power) - 1/200 Sec, i.e. 5 ms&lt;/li&gt;
+&lt;li&gt;Flash Duration (lowest Power) - 1/20000 Sec, i.e. 50 μs&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;figure &gt;
+    &lt;a href=&#34;http://blog.mprashant.com/images/posts/measure-flash-durations/digitek-1.png&#34;&gt;
+        &lt;img src=&#34;http://blog.mprashant.com/images/posts/measure-flash-durations/digitek-1.png&#34; /&gt;
+    &lt;/a&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;&lt;br /&gt;
+Above Audacity screenshot shows flash durations for differen flash powers. Unlike Nikon SB-500, I found actual flash duration results of Digitek to be better than official specs. As per official specs, full power flash duration should be 5ms, but in reality I found it to be 1.23ms. Similarly official specs for lowest power flash duration is 50 μs, but in reality I found it to be 30 μs.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+Due to few high speed photography projects lined up, I am more intersted in lower power flash duration. Above test results prove Digitek DFL-003 to be superior than Nikon SB-500 for this aspect.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;update-arduino-project-for-optical-pulse-measurement&#34;&gt;[Update] Arduino project for optical pulse measurement&lt;/h3&gt;
+
+
+&lt;figure &gt;
+    &lt;a href=&#34;http://blog.mprashant.com/images/posts/measure-flash-durations/arduino-1.png&#34;&gt;
+        &lt;img src=&#34;http://blog.mprashant.com/images/posts/measure-flash-durations/arduino-1.png&#34; /&gt;
+    &lt;/a&gt;
+    
+&lt;/figure&gt;
+
+
+&lt;p&gt;&lt;br /&gt;
+With help of a photo diode and a 100k ohm resistor, you can build simple arduino circuit like above to measure flash duration. Power on arduino board, wait for few seconds till arduino finds ambience sufficiently dark (wait till LED on arduino board is on), and then fire up the flash. The program will display flash duration on Arduino IDE serial monitor window.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;pre&gt;&lt;code&gt;
+// Defines for setting and clearing register bits
+#ifndef cbi
+#define cbi(sfr, bit) (_SFR_BYTE(sfr) &amp;amp;= ~_BV(bit))
+#endif
+#ifndef sbi
+#define sbi(sfr, bit) (_SFR_BYTE(sfr) |= _BV(bit))
+#endif&lt;/p&gt;
+
+&lt;p&gt;// Status LED pin on arduino board
+#define statusPin 13&lt;/p&gt;
+
+&lt;p&gt;// Analog pin where optical triggered input is given
+#define pin 5&lt;/p&gt;
+
+&lt;p&gt;#define threshold 60&lt;/p&gt;
+
+&lt;p&gt;void setup() {
+  analogReference(INTERNAL);&lt;/p&gt;
+
+&lt;p&gt;// Set analog prescale to 16 for much faster analog read.
+  sbi(ADCSRA, ADPS2);
+  cbi(ADCSRA, ADPS1);
+  cbi(ADCSRA, ADPS0);&lt;/p&gt;
+
+&lt;p&gt;Serial.begin(57600);
+  pinMode(statusPin, OUTPUT);
+}&lt;/p&gt;
+
+&lt;p&gt;void loop() {
+  //******* wait for optical signal to settle to near zero&lt;br /&gt;
+  // LED on arduino board will lit up till amibience is dark
+  digitalWrite(statusPin, HIGH);
+repeat:
+  while (analogRead(pin) &amp;gt; threshold);        //wait till signal is high
+  unsigned long waitStartedOn = millis();
+  while (millis() - waitStartedOn &amp;lt; 2000) {  //check if signal is below threshold for continious 2 seconds
+    if (analogRead(pin) &amp;gt; threshold) {
+      goto repeat;
+    }
+  }
+  digitalWrite(statusPin, LOW);&lt;/p&gt;
+
+&lt;p&gt;//****** ambience is dark, start measurement
+  while (analogRead(pin) &amp;lt; threshold);        //wait till signal is low
+  unsigned int up = micros();&lt;/p&gt;
+
+&lt;p&gt;while (analogRead(pin) &amp;gt; threshold);        //wait till signal is high
+  unsigned int down = micros();&lt;/p&gt;
+
+&lt;p&gt;//****** display result on serial monitor
+  Serial.print(&amp;laquo;flash duration = &amp;laquo;);
+  Serial.print(down - up);
+  Serial.println(&amp;raquo; micro-sec&amp;raquo;);&lt;/p&gt;
+
+&lt;p&gt;delay (5000);
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Xiaomi Yi Small Ants camera Hacks  &amp; Customization</title>
