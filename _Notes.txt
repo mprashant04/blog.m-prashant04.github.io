@@ -1,1 +1,4 @@
 online image compression - http://optimizilla.com/
+
+Markdown table generator: http://www.tablesgenerator.com/markdown_tables
+
